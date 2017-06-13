@@ -54,12 +54,13 @@
       <form class="form-signin" action="<?php echo base_URL()?>atur/proseslogin" method="POST">
       <center><img draggable="false" src="<?php echo base_url('assets/img/abc_bookshop.PNG');?>" class="img-responsive img"></center>
       <?php echo $this->session->flashdata("k"); ?>
+      <?php echo validation_errors();?>
       <div class="input-group ig">
-                <input type="text" name="username" required="" placeholder="Username" autofocus class="form-control">
+                <input type="text" name="username" placeholder="Username" autofocus class="form-control">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
       </div>
       <div class="input-group ig">
-                  <input type="password" name="password" placeholder="Password" required="" class="form-control">
+                  <input type="password" name="password" placeholder="Password" class="form-control">
                   <span class="input-group-addon"><i class="fa fa-keyboard-o"></i></span>
       </div>
         <center><button class="btn btn-large btn-primary" type="submit">LOGIN</button></center>

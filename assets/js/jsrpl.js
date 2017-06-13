@@ -19,7 +19,7 @@ function loaddatabuku(){
   });
 }
 */
-
+/*
 $("#beligan").click(function(){
   loadbeli();
 });
@@ -39,7 +39,7 @@ function loadbeli(){
   });
 
 }
-
+*/
 /*
 function loadbeli(){
     var jml = $('#jml').val();

@@ -25,6 +25,14 @@ class MBuku extends CI_Model
         $this->db->insert($this->table, $data);
     }
 
+    public function insertDataDB($tab,$data){
+        $this->db->insert($tab, $data);
+    }
+
+    public function AlterIncrement($table,$val){
+        $this->db->query("ALTER TABLE $table AUTO_INCREMENT $val");
+    }
+
     public function getAll($tab){
         //$data = $this->db->from($this->table);
         $data = $this->db->get($tab);
@@ -46,6 +54,10 @@ class MBuku extends CI_Model
     public function deleteData($code,$param,$tab){
         $this->db->where($param, $code);
         $this->db->delete($tab);
+    }
+
+    public function getviaQuery($que){
+        $this->db->query($que);
     }
 
 }

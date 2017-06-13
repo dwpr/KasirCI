@@ -367,10 +367,14 @@ $config['encryption_key'] = 'p4mella5upermarketweb';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'files';
+//
+//$config['sess_driver'] = 'database'; //this config will save session in to databases
+$config['sess_driver'] = 'files'; //this config will save session in a files
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+//if uses type database in sess_driver please input name table in database in sess_save_path example 'ci_session'
+//if uses type files in sess_driver please input FCPATH . 'applcation/cache/';
+$config['sess_save_path'] = FCPATH . 'applcation/cache/'; //use null if you don't want save the session
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;

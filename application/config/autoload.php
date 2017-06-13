@@ -58,7 +58,9 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database','session','pagination','googlemaps','upload','cart');
+$autoload['libraries'] = array('database','session','pagination','googlemaps','upload','cart','parser','form_validation');
+//beberapa load tidak digunakan karena ini bekas dari project MTP di pamella supermarket by WEST Dev
+//dwipurwanto.210@gmail.com
 
 /*
 | -------------------------------------------------------------------
@@ -90,7 +92,7 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 | html untuk pengganti require :3
 */
-$autoload['helper'] = array('url','helperku');
+$autoload['helper'] = array('url','helperku','form');
 
 /*
 | -------------------------------------------------------------------
